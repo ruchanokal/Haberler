@@ -1,0 +1,1458 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".fragments.DetayFragment">
+
+
+    <ScrollView
+        android:id="@+id/scrollViewforDetay"
+        android:visibility="visible"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:visibility="gone"
+                android:layout_centerInParent="true"
+                android:layout_width="match_parent"
+                android:src="@mipmap/ic_launcher"
+                android:layout_height="330dp"
+                android:scaleType="centerCrop"
+                android:id="@+id/imageViewDetayAnaFoto">
+            </ImageView>
+
+            <VideoView
+                android:visibility="visible"
+                android:layout_gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="330dp"
+                android:id="@+id/videoWeb">
+            </VideoView>
+
+            <ImageView
+                android:layout_width="95dp"
+                android:layout_height="95dp"
+                android:src="@drawable/ic_baseline_play_circle_outline_24"
+                android:layout_centerInParent="true"
+                android:id="@+id/playTusu"/>
+
+        </RelativeLayout>
+
+
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardViewDetay"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="10dp"
+            android:elevation="10dp"
+            app:cardBackgroundColor="#F2F6F5"
+            app:cardCornerRadius="10dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/anaBaslikDetayText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="22sp"
+                android:layout_marginStart="5dp"
+                android:layout_marginEnd="5dp"
+                android:textColor="@color/black"
+                android:gravity="center"
+                android:text="Haber Başlığı"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="5dp"
+                android:fontFamily="@font/montserrat_bold">
+
+            </TextView>
+
+            <TextView
+                android:id="@+id/spotDetayText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="16.5sp"
+                android:layout_marginStart="5dp"
+                android:layout_marginEnd="5dp"
+                android:textColor="@color/black"
+                android:gravity="center"
+                android:text="Haber Başlığı"
+                android:layout_marginBottom="10dp"
+                android:fontFamily="@font/montserrat">
+
+            </TextView>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/kategoriTextDetay"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Gündem"
+                android:textSize="15.5sp"
+                android:textColor="@color/purple_700"
+                android:fontFamily="@font/montserrat"
+                android:layout_marginBottom="10dp"
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="5dp">
+
+            </TextView>
+
+            <TextView
+                android:id="@+id/tarihTextDetay"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="end"
+                android:textColor="@color/purple_700"
+                android:fontFamily="@font/montserrat"
+                android:text="08.08.2011"
+                android:textSize="15.5sp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginStart="5dp"
+                android:layout_marginEnd="15dp">
+
+            </TextView>
+
+            </LinearLayout>
+
+            <View
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="#370D2291">
+
+            </View>
+
+
+            <TextView
+                android:id="@+id/textDetay1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="15.5sp"
+                android:textColor="#4E4E4E"
+                android:text="Son dakika: Ülkemizdeki koronavirüs vaka ve vefat sayıları düne göre arttı."
+                android:fontFamily="@font/montserrat"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp">
+
+            </TextView>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="233dp"
+                android:scaleType="centerCrop"
+                android:layout_gravity="center"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="10dp"
+                android:src="@mipmap/ic_launcher"
+                android:id="@+id/imageViewDetayAraFoto1">
+            </ImageView>
+
+            <TextView
+                android:id="@+id/baslikDetay1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="17sp"
+                android:textColor="@color/black"
+                android:text="Küçük Başlık"
+                android:gravity="center"
+                android:fontFamily="@font/montserrat_bold"
+                android:layout_marginBottom="10dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp">
+
+            </TextView>
+
+            <TextView
+                android:id="@+id/textDetay2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="15.5sp"
+                android:textColor="#4E4E4E"
+                android:text="Son dakika: Ülkemizdeki koronavirüs vaka ve vefat sayıları düne göre arttı."
+                android:fontFamily="@font/montserrat"
+                android:layout_marginBottom="10dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp">
+
+            </TextView>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="233dp"
+                android:scaleType="centerCrop"
+                android:layout_gravity="center"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="10dp"
+                android:src="@mipmap/ic_launcher"
+                android:id="@+id/imageViewDetayAraFoto2">
+            </ImageView>
+
+
+            <TextView
+                android:id="@+id/baslikDetay2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="17sp"
+                android:textColor="@color/black"
+                android:text="Küçük Başlık"
+                android:gravity="center"
+                android:fontFamily="@font/montserrat_bold"
+                android:layout_marginBottom="10dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp">
+
+            </TextView>
+
+
+            <TextView
+                android:id="@+id/textDetay3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="15.5sp"
+                android:textColor="#4E4E4E"
+                android:text="Son dakika: Ülkemizdeki koronavirüs vaka ve vefat sayıları düne göre arttı."
+                android:fontFamily="@font/montserrat"
+                android:layout_marginBottom="10dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp">
+
+            </TextView>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="233dp"
+                android:layout_gravity="center"
+                android:scaleType="centerCrop"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="10dp"
+                android:src="@mipmap/ic_launcher"
+                android:id="@+id/imageViewDetayAraFoto3">
+            </ImageView>
+
+            <TextView
+                android:id="@+id/baslikDetay3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="17sp"
+                android:textColor="@color/black"
+                android:text="Küçük Başlık"
+                android:gravity="center"
+                android:fontFamily="@font/montserrat_bold"
+                android:layout_marginBottom="10dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp">
+
+            </TextView>
+
+            <TextView
+                android:id="@+id/textDetay4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="15.5sp"
+                android:textColor="#4E4E4E"
+                android:text="Son dakika: Ülkemizdeki koronavirüs vaka ve vefat sayıları düne göre arttı."
+                android:fontFamily="@font/montserrat"
+                android:layout_marginBottom="10dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp">
+
+            </TextView>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="233dp"
+                android:layout_gravity="center"
+                android:scaleType="centerCrop"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="10dp"
+                android:src="@mipmap/ic_launcher"
+                android:id="@+id/imageViewDetayAraFoto4">
+            </ImageView>
+
+            <TextView
+                android:id="@+id/baslikDetay4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="17sp"
+                android:textColor="@color/black"
+                android:text="Küçük Başlık"
+                android:gravity="center"
+                android:fontFamily="@font/montserrat_bold"
+                android:layout_marginBottom="10dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp">
+
+            </TextView>
+
+            <TextView
+                android:id="@+id/textDetay5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="15.5sp"
+                android:textColor="#4E4E4E"
+                android:text="Son dakika: Ülkemizdeki koronavirüs vaka ve vefat sayıları düne göre arttı."
+                android:fontFamily="@font/montserrat"
+                android:layout_marginBottom="10dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp">
+
+            </TextView>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="233dp"
+                android:layout_gravity="center"
+                android:scaleType="centerCrop"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="10dp"
+                android:src="@mipmap/ic_launcher"
+                android:id="@+id/imageViewDetayAraFoto5">
+            </ImageView>
+
+            <TextView
+                android:id="@+id/baslikDetay5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="17sp"
+                android:textColor="@color/black"
+                android:text="Küçük Başlık"
+                android:gravity="center"
+                android:fontFamily="@font/montserrat_bold"
+                android:layout_marginBottom="10dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp">
+
+            </TextView>
+
+            <TextView
+                android:id="@+id/textDetay6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="15.5sp"
+                android:textColor="#4E4E4E"
+                android:text="Son dakika: Ülkemizdeki koronavirüs vaka ve vefat sayıları düne göre arttı."
+                android:fontFamily="@font/montserrat"
+                android:layout_marginBottom="10dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp">
+
+            </TextView>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="233dp"
+                android:layout_gravity="center"
+                android:scaleType="centerCrop"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="10dp"
+                android:src="@mipmap/ic_launcher"
+                android:id="@+id/imageViewDetayAraFoto6">
+            </ImageView>
+
+            <TextView
+                android:id="@+id/baslikDetay6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="17sp"
+                android:textColor="@color/black"
+                android:text="Küçük Başlık"
+                android:gravity="center"
+                android:fontFamily="@font/montserrat_bold"
+                android:layout_marginBottom="10dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp">
+
+            </TextView>
+
+            <TextView
+                android:id="@+id/textDetay7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="15.5sp"
+                android:textColor="#4E4E4E"
+                android:text="Son dakika: Ülkemizdeki koronavirüs vaka ve vefat sayıları düne göre arttı."
+                android:fontFamily="@font/montserrat"
+                android:layout_marginBottom="10dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp">
+
+            </TextView>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="233dp"
+                android:layout_gravity="center"
+                android:scaleType="centerCrop"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="10dp"
+                android:src="@mipmap/ic_launcher"
+                android:id="@+id/imageViewDetayAraFoto7">
+            </ImageView>
+
+            <TextView
+                android:id="@+id/baslikDetay7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="17sp"
+                android:textColor="@color/black"
+                android:text="Küçük Başlık"
+                android:gravity="center"
+                android:fontFamily="@font/montserrat_bold"
+                android:layout_marginBottom="10dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp">
+
+            </TextView>
+
+            <TextView
+                android:id="@+id/textDetay8"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="15.5sp"
+                android:textColor="#4E4E4E"
+                android:text="Son dakika: Ülkemizdeki koronavirüs vaka ve vefat sayıları düne göre arttı."
+                android:fontFamily="@font/montserrat"
+                android:layout_marginBottom="10dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp">
+
+            </TextView>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="233dp"
+                android:layout_gravity="center"
+                android:scaleType="centerCrop"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="10dp"
+                android:src="@mipmap/ic_launcher"
+                android:id="@+id/imageViewDetayAraFoto8">
+            </ImageView>
+
+            <TextView
+                android:id="@+id/baslikDetay8"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="17sp"
+                android:textColor="@color/black"
+                android:text="Küçük Başlık"
+                android:gravity="center"
+                android:fontFamily="@font/montserrat_bold"
+                android:layout_marginBottom="10dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp">
+
+            </TextView>
+
+            <TextView
+                android:id="@+id/textDetay9"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="15.5sp"
+                android:textColor="#4E4E4E"
+                android:text="Son dakika: Ülkemizdeki koronavirüs vaka ve vefat sayıları düne göre arttı."
+                android:fontFamily="@font/montserrat"
+                android:layout_marginBottom="10dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp">
+
+            </TextView>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="233dp"
+                android:layout_gravity="center"
+                android:scaleType="centerCrop"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="10dp"
+                android:src="@mipmap/ic_launcher"
+                android:id="@+id/imageViewDetayAraFoto9">
+            </ImageView>
+
+            <TextView
+                android:id="@+id/baslikDetay9"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="17sp"
+                android:textColor="@color/black"
+                android:text="Küçük Başlık"
+                android:gravity="center"
+                android:fontFamily="@font/montserrat_bold"
+                android:layout_marginBottom="10dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp">
+
+            </TextView>
+
+            <TextView
+                android:id="@+id/textDetay10"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="15.5sp"
+                android:textColor="#4E4E4E"
+                android:text="Son dakika: Ülkemizdeki koronavirüs vaka ve vefat sayıları düne göre arttı."
+                android:fontFamily="@font/montserrat"
+                android:layout_marginBottom="10dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp">
+
+            </TextView>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="233dp"
+                android:layout_gravity="center"
+                android:scaleType="centerCrop"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="10dp"
+                android:src="@mipmap/ic_launcher"
+                android:id="@+id/imageViewDetayAraFoto10">
+            </ImageView>
+
+            <TextView
+                android:id="@+id/baslikDetay10"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="17sp"
+                android:textColor="@color/black"
+                android:text="Küçük Başlık"
+                android:gravity="center"
+                android:fontFamily="@font/montserrat_bold"
+                android:layout_marginBottom="10dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp">
+
+            </TextView>
+
+            <TextView
+                android:id="@+id/textDetay11"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="15.5sp"
+                android:textColor="#4E4E4E"
+                android:text="Son dakika: Ülkemizdeki koronavirüs vaka ve vefat sayıları düne göre arttı."
+                android:fontFamily="@font/montserrat"
+                android:layout_marginBottom="10dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp">
+
+            </TextView>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="233dp"
+                android:layout_gravity="center"
+                android:scaleType="centerCrop"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="10dp"
+                android:src="@mipmap/ic_launcher"
+                android:id="@+id/imageViewDetayAraFoto11">
+            </ImageView>
+
+            <TextView
+                android:id="@+id/baslikDetay11"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="17sp"
+                android:textColor="@color/black"
+                android:text="Küçük Başlık"
+                android:gravity="center"
+                android:fontFamily="@font/montserrat_bold"
+                android:layout_marginBottom="10dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp">
+
+            </TextView>
+
+            <TextView
+                android:id="@+id/textDetay12"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="15.5sp"
+                android:textColor="#4E4E4E"
+                android:text="Son dakika: Ülkemizdeki koronavirüs vaka ve vefat sayıları düne göre arttı."
+                android:fontFamily="@font/montserrat"
+                android:layout_marginBottom="10dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp">
+
+            </TextView>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="233dp"
+                android:layout_gravity="center"
+                android:scaleType="centerCrop"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="10dp"
+                android:src="@mipmap/ic_launcher"
+                android:id="@+id/imageViewDetayAraFoto12">
+            </ImageView>
+
+            <TextView
+                android:id="@+id/baslikDetay12"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="17sp"
+                android:textColor="@color/black"
+                android:text="Küçük Başlık"
+                android:gravity="center"
+                android:fontFamily="@font/montserrat_bold"
+                android:layout_marginBottom="10dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp">
+
+            </TextView>
+
+            <TextView
+                android:id="@+id/textDetay13"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="15.5sp"
+                android:textColor="#4E4E4E"
+                android:text="Son dakika: Ülkemizdeki koronavirüs vaka ve vefat sayıları düne göre arttı."
+                android:fontFamily="@font/montserrat"
+                android:layout_marginBottom="10dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp">
+
+            </TextView>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="233dp"
+                android:layout_gravity="center"
+                android:scaleType="centerCrop"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="10dp"
+                android:src="@mipmap/ic_launcher"
+                android:id="@+id/imageViewDetayAraFoto13">
+            </ImageView>
+
+            <TextView
+                android:id="@+id/baslikDetay13"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="17sp"
+                android:textColor="@color/black"
+                android:text="Küçük Başlık"
+                android:gravity="center"
+                android:fontFamily="@font/montserrat_bold"
+                android:layout_marginBottom="10dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp">
+
+            </TextView>
+
+            <TextView
+                android:id="@+id/textDetay14"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="15.5sp"
+                android:textColor="#4E4E4E"
+                android:text="Son dakika: Ülkemizdeki koronavirüs vaka ve vefat sayıları düne göre arttı."
+                android:fontFamily="@font/montserrat"
+                android:layout_marginBottom="10dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp">
+
+            </TextView>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="233dp"
+                android:layout_gravity="center"
+                android:scaleType="centerCrop"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="10dp"
+                android:src="@mipmap/ic_launcher"
+                android:id="@+id/imageViewDetayAraFoto14">
+            </ImageView>
+
+            <TextView
+                android:id="@+id/baslikDetay14"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="17sp"
+                android:textColor="@color/black"
+                android:text="Küçük Başlık"
+                android:gravity="center"
+                android:fontFamily="@font/montserrat_bold"
+                android:layout_marginBottom="10dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp">
+
+            </TextView>
+
+            <TextView
+                android:id="@+id/textDetay15"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="15.5sp"
+                android:textColor="#4E4E4E"
+                android:text="Son dakika: Ülkemizdeki koronavirüs vaka ve vefat sayıları düne göre arttı."
+                android:fontFamily="@font/montserrat"
+                android:layout_marginBottom="10dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp">
+
+            </TextView>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="233dp"
+                android:layout_gravity="center"
+                android:scaleType="centerCrop"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="10dp"
+                android:src="@mipmap/ic_launcher"
+                android:id="@+id/imageViewDetayAraFoto15">
+            </ImageView>
+
+            <TextView
+                android:id="@+id/baslikDetay15"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="17sp"
+                android:textColor="@color/black"
+                android:text="Küçük Başlık"
+                android:gravity="center"
+                android:fontFamily="@font/montserrat_bold"
+                android:layout_marginBottom="10dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp">
+
+            </TextView>
+
+            <TextView
+                android:id="@+id/textDetay16"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="15.5sp"
+                android:textColor="#4E4E4E"
+                android:text="Son dakika: Ülkemizdeki koronavirüs vaka ve vefat sayıları düne göre arttı."
+                android:fontFamily="@font/montserrat"
+                android:layout_marginBottom="10dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp">
+
+            </TextView>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="233dp"
+                android:layout_gravity="center"
+                android:scaleType="centerCrop"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="10dp"
+                android:src="@mipmap/ic_launcher"
+                android:id="@+id/imageViewDetayAraFoto16">
+            </ImageView>
+
+            <TextView
+                android:id="@+id/baslikDetay16"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="17sp"
+                android:textColor="@color/black"
+                android:text="Küçük Başlık"
+                android:gravity="center"
+                android:fontFamily="@font/montserrat_bold"
+                android:layout_marginBottom="10dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp">
+
+            </TextView>
+
+            <TextView
+                android:id="@+id/textDetay17"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="15.5sp"
+                android:textColor="#4E4E4E"
+                android:text="Son dakika: Ülkemizdeki koronavirüs vaka ve vefat sayıları düne göre arttı."
+                android:fontFamily="@font/montserrat"
+                android:layout_marginBottom="10dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp">
+
+            </TextView>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="233dp"
+                android:layout_gravity="center"
+                android:scaleType="centerCrop"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="10dp"
+                android:src="@mipmap/ic_launcher"
+                android:id="@+id/imageViewDetayAraFoto17">
+            </ImageView>
+
+
+            <TextView
+                android:id="@+id/baslikDetay17"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="17sp"
+                android:textColor="@color/black"
+                android:text="Küçük Başlık"
+                android:gravity="center"
+                android:fontFamily="@font/montserrat_bold"
+                android:layout_marginBottom="10dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp">
+
+            </TextView>
+
+            <TextView
+                android:id="@+id/textDetay18"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="15.5sp"
+                android:textColor="#4E4E4E"
+                android:text="Son dakika: Ülkemizdeki koronavirüs vaka ve vefat sayıları düne göre arttı."
+                android:fontFamily="@font/montserrat"
+                android:layout_marginBottom="10dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp">
+
+            </TextView>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="233dp"
+                android:layout_gravity="center"
+                android:scaleType="centerCrop"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="10dp"
+                android:src="@mipmap/ic_launcher"
+                android:id="@+id/imageViewDetayAraFoto18">
+            </ImageView>
+
+            <TextView
+                android:id="@+id/baslikDetay18"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="17sp"
+                android:textColor="@color/black"
+                android:text="Küçük Başlık"
+                android:gravity="center"
+                android:fontFamily="@font/montserrat_bold"
+                android:layout_marginBottom="10dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp">
+
+            </TextView>
+
+            <TextView
+                android:id="@+id/textDetay19"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="15.5sp"
+                android:textColor="#4E4E4E"
+                android:text="Son dakika: Ülkemizdeki koronavirüs vaka ve vefat sayıları düne göre arttı."
+                android:fontFamily="@font/montserrat"
+                android:layout_marginBottom="10dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp">
+
+            </TextView>
+
+            <ImageView
+                android:id="@+id/imageViewDetayAraFoto19"
+                android:layout_width="match_parent"
+                android:layout_height="233dp"
+                android:layout_gravity="center"
+                android:scaleType="centerCrop"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="10dp"
+                android:src="@mipmap/ic_launcher">
+            </ImageView>
+
+            <TextView
+                android:id="@+id/baslikDetay19"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="17sp"
+                android:textColor="@color/black"
+                android:text="Küçük Başlık"
+                android:gravity="center"
+                android:fontFamily="@font/montserrat_bold"
+                android:layout_marginBottom="10dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp">
+
+            </TextView>
+
+            <TextView
+                android:id="@+id/textDetay20"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="15.5sp"
+                android:textColor="#4E4E4E"
+                android:text="Son dakika: Ülkemizdeki koronavirüs vaka ve vefat sayıları düne göre arttı."
+                android:fontFamily="@font/montserrat"
+                android:layout_marginBottom="10dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp">
+
+            </TextView>
+
+            <ImageView
+                android:id="@+id/imageViewDetayAraFoto20"
+                android:layout_width="match_parent"
+                android:layout_height="233dp"
+                android:layout_gravity="center"
+                android:scaleType="centerCrop"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="10dp"
+                android:src="@mipmap/ic_launcher">
+            </ImageView>
+
+            <TextView
+                android:id="@+id/baslikDetay20"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="17sp"
+                android:textColor="@color/black"
+                android:text="Küçük Başlık"
+                android:gravity="center"
+                android:fontFamily="@font/montserrat_bold"
+                android:layout_marginBottom="10dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp">
+
+            </TextView>
+
+            <TextView
+                android:id="@+id/textDetay21"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="15.5sp"
+                android:textColor="#4E4E4E"
+                android:text="Son dakika: Ülkemizdeki koronavirüs vaka ve vefat sayıları düne göre arttı."
+                android:fontFamily="@font/montserrat"
+                android:layout_marginBottom="10dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp">
+
+            </TextView>
+
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="233dp"
+                android:layout_gravity="center"
+                android:scaleType="centerCrop"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="10dp"
+                android:src="@mipmap/ic_launcher"
+                android:id="@+id/imageViewDetayAraFoto21">
+            </ImageView>
+
+            <TextView
+                android:id="@+id/baslikDetay21"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="17sp"
+                android:textColor="@color/black"
+                android:text="Küçük Başlık"
+                android:gravity="center"
+                android:fontFamily="@font/montserrat_bold"
+                android:layout_marginBottom="10dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp">
+
+            </TextView>
+
+            <TextView
+                android:id="@+id/textDetay22"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="15.5sp"
+                android:textColor="#4E4E4E"
+                android:text="Son dakika: Ülkemizdeki koronavirüs vaka ve vefat sayıları düne göre arttı."
+                android:fontFamily="@font/montserrat"
+                android:layout_marginBottom="10dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp">
+
+            </TextView>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="233dp"
+                android:layout_gravity="center"
+                android:scaleType="centerCrop"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="10dp"
+                android:src="@mipmap/ic_launcher"
+                android:id="@+id/imageViewDetayAraFoto22">
+            </ImageView>
+
+            <TextView
+                android:id="@+id/baslikDetay22"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="17sp"
+                android:textColor="@color/black"
+                android:text="Küçük Başlık"
+                android:gravity="center"
+                android:fontFamily="@font/montserrat_bold"
+                android:layout_marginBottom="10dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp">
+
+            </TextView>
+
+            <TextView
+                android:id="@+id/textDetay23"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="15.5sp"
+                android:textColor="#4E4E4E"
+                android:text="Son dakika: Ülkemizdeki koronavirüs vaka ve vefat sayıları düne göre arttı."
+                android:fontFamily="@font/montserrat"
+                android:layout_marginBottom="10dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp">
+
+            </TextView>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="233dp"
+                android:layout_gravity="center"
+                android:scaleType="centerCrop"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="10dp"
+                android:src="@mipmap/ic_launcher"
+                android:id="@+id/imageViewDetayAraFoto23">
+            </ImageView>
+
+            <TextView
+                android:id="@+id/baslikDetay23"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="17sp"
+                android:textColor="@color/black"
+                android:text="Küçük Başlık"
+                android:gravity="center"
+                android:fontFamily="@font/montserrat_bold"
+                android:layout_marginBottom="10dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp">
+
+            </TextView>
+
+            <TextView
+                android:id="@+id/textDetay24"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="15.5sp"
+                android:textColor="#4E4E4E"
+                android:text="Son dakika: Ülkemizdeki koronavirüs vaka ve vefat sayıları düne göre arttı."
+                android:fontFamily="@font/montserrat"
+                android:layout_marginBottom="10dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp">
+
+            </TextView>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="233dp"
+                android:layout_gravity="center"
+                android:scaleType="centerCrop"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="10dp"
+                android:src="@mipmap/ic_launcher"
+                android:id="@+id/imageViewDetayAraFoto24">
+            </ImageView>
+
+            <TextView
+                android:id="@+id/baslikDetay24"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="17sp"
+                android:textColor="@color/black"
+                android:text="Küçük Başlık"
+                android:gravity="center"
+                android:fontFamily="@font/montserrat_bold"
+                android:layout_marginBottom="10dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp">
+
+            </TextView>
+
+            <TextView
+                android:id="@+id/textDetay25"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="15.5sp"
+                android:textColor="#4E4E4E"
+                android:text="Son dakika: Ülkemizdeki koronavirüs vaka ve vefat sayıları düne göre arttı."
+                android:fontFamily="@font/montserrat"
+                android:layout_marginBottom="10dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp">
+
+            </TextView>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="233dp"
+                android:layout_gravity="center"
+                android:scaleType="centerCrop"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="10dp"
+                android:src="@mipmap/ic_launcher"
+                android:id="@+id/imageViewDetayAraFoto25">
+            </ImageView>
+
+            <TextView
+                android:id="@+id/baslikDetay25"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="17sp"
+                android:textColor="@color/black"
+                android:text="Küçük Başlık"
+                android:gravity="center"
+                android:fontFamily="@font/montserrat_bold"
+                android:layout_marginBottom="10dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp">
+
+            </TextView>
+
+            <TextView
+                android:id="@+id/textDetay26"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="15.5sp"
+                android:textColor="#4E4E4E"
+                android:text="Son dakika: Ülkemizdeki koronavirüs vaka ve vefat sayıları düne göre arttı."
+                android:fontFamily="@font/montserrat"
+                android:layout_marginBottom="10dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp">
+
+            </TextView>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="233dp"
+                android:layout_gravity="center"
+                android:scaleType="centerCrop"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="10dp"
+                android:src="@mipmap/ic_launcher"
+                android:id="@+id/imageViewDetayAraFoto26">
+            </ImageView>
+
+            <TextView
+                android:id="@+id/baslikDetay26"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="17sp"
+                android:textColor="@color/black"
+                android:text="Küçük Başlık"
+                android:gravity="center"
+                android:fontFamily="@font/montserrat_bold"
+                android:layout_marginBottom="10dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp">
+
+            </TextView>
+
+            <TextView
+                android:id="@+id/textDetay27"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="15.5sp"
+                android:textColor="#4E4E4E"
+                android:text="Son dakika: Ülkemizdeki koronavirüs vaka ve vefat sayıları düne göre arttı."
+                android:fontFamily="@font/montserrat"
+                android:layout_marginBottom="10dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp">
+
+            </TextView>
+
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="233dp"
+                android:layout_gravity="center"
+                android:scaleType="centerCrop"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="10dp"
+                android:src="@mipmap/ic_launcher"
+                android:id="@+id/imageViewDetayAraFoto27">
+            </ImageView>
+
+            <TextView
+                android:id="@+id/baslikDetay27"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="17sp"
+                android:textColor="@color/black"
+                android:text="Küçük Başlık"
+                android:gravity="center"
+                android:fontFamily="@font/montserrat_bold"
+                android:layout_marginBottom="10dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp">
+
+            </TextView>
+
+            <TextView
+                android:id="@+id/textDetay28"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="15.5sp"
+                android:textColor="#4E4E4E"
+                android:text="Son dakika: Ülkemizdeki koronavirüs vaka ve vefat sayıları düne göre arttı."
+                android:fontFamily="@font/montserrat"
+                android:layout_marginBottom="10dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp">
+
+            </TextView>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="233dp"
+                android:layout_gravity="center"
+                android:scaleType="centerCrop"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="10dp"
+                android:src="@mipmap/ic_launcher"
+                android:id="@+id/imageViewDetayAraFoto28">
+            </ImageView>
+
+            <TextView
+                android:id="@+id/baslikDetay28"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="17sp"
+                android:textColor="@color/black"
+                android:text="Küçük Başlık"
+                android:gravity="center"
+                android:fontFamily="@font/montserrat_bold"
+                android:layout_marginBottom="10dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp">
+
+            </TextView>
+
+            <TextView
+                android:id="@+id/textDetay29"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="15.5sp"
+                android:textColor="#4E4E4E"
+                android:text="Son dakika: Ülkemizdeki koronavirüs vaka ve vefat sayıları düne göre arttı."
+                android:fontFamily="@font/montserrat"
+                android:layout_marginBottom="10dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp">
+
+            </TextView>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="233dp"
+                android:layout_gravity="center"
+                android:scaleType="centerCrop"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="10dp"
+                android:src="@mipmap/ic_launcher"
+                android:id="@+id/imageViewDetayAraFoto29">
+            </ImageView>
+
+            <TextView
+                android:id="@+id/baslikDetay29"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="17sp"
+                android:textColor="@color/black"
+                android:text="Küçük Başlık"
+                android:gravity="center"
+                android:fontFamily="@font/montserrat_bold"
+                android:layout_marginBottom="10dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp">
+
+            </TextView>
+
+            <TextView
+                android:id="@+id/textDetay30"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="15.5sp"
+                android:textColor="#4E4E4E"
+                android:text="Son dakika: Ülkemizdeki koronavirüs vaka ve vefat sayıları düne göre arttı."
+                android:fontFamily="@font/montserrat"
+                android:layout_marginBottom="10dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp">
+
+            </TextView>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="233dp"
+                android:layout_gravity="center"
+                android:scaleType="centerCrop"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="10dp"
+                android:src="@mipmap/ic_launcher"
+                android:id="@+id/imageViewDetayAraFoto30">
+            </ImageView>
+
+            <TextView
+                android:id="@+id/baslikDetay30"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="17sp"
+                android:textColor="@color/black"
+                android:text="Küçük Başlık"
+                android:gravity="center"
+                android:fontFamily="@font/montserrat_bold"
+                android:layout_marginBottom="10dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp">
+
+            </TextView>
+
+            <TextView
+                android:id="@+id/textDetay31"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="15.5sp"
+                android:textColor="#4E4E4E"
+                android:text="Son dakika: Ülkemizdeki koronavirüs vaka ve vefat sayıları düne göre arttı."
+                android:fontFamily="@font/montserrat"
+                android:layout_marginBottom="10dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp">
+
+            </TextView>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="233dp"
+                android:layout_gravity="center"
+                android:scaleType="centerCrop"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="10dp"
+                android:src="@mipmap/ic_launcher"
+                android:id="@+id/imageViewDetayAraFoto31">
+            </ImageView>
+
+            <TextView
+                android:id="@+id/baslikDetay31"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="17sp"
+                android:textColor="@color/black"
+                android:text="Küçük Başlık"
+                android:gravity="center"
+                android:fontFamily="@font/montserrat_bold"
+                android:layout_marginBottom="10dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp">
+
+            </TextView>
+
+            <TextView
+                android:id="@+id/textDetay32"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="15.5sp"
+                android:textColor="#4E4E4E"
+                android:text="Son dakika: Ülkemizdeki koronavirüs vaka ve vefat sayıları düne göre arttı."
+                android:fontFamily="@font/montserrat"
+                android:layout_marginBottom="10dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp">
+
+            </TextView>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="233dp"
+                android:layout_gravity="center"
+                android:scaleType="centerCrop"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="10dp"
+                android:src="@mipmap/ic_launcher"
+                android:id="@+id/imageViewDetayAraFoto32">
+            </ImageView>
+
+            <TextView
+                android:id="@+id/baslikDetay32"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="17sp"
+                android:textColor="@color/black"
+                android:text="Küçük Başlık"
+                android:gravity="center"
+                android:fontFamily="@font/montserrat_bold"
+                android:layout_marginBottom="10dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp">
+
+            </TextView>
+
+
+
+        </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+    </LinearLayout>
+
+    </ScrollView>
+
+    <ProgressBar
+        android:layout_centerInParent="true"
+        android:id="@+id/progressBar"
+        android:layout_gravity="center"
+        android:indeterminateDuration="@android:integer/config_longAnimTime"
+        android:layout_width="85dp"
+        android:layout_height="85dp"
+        style="?android:attr/progressBarStyle">
+    </ProgressBar>
+
+
+</RelativeLayout>
